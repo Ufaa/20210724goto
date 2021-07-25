@@ -6,7 +6,6 @@ a {
 .header {
   width: 96%;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   height: 70px;
   padding: 1px 2%;
@@ -16,19 +15,22 @@ a {
   top: 0%;
   left: 0%;
   z-index: 10;
+  position: relative;
 }
 .header-ttl {
   padding-bottom: 1%;
   font-size: 18px;
   width: 120px;
+  position: absolute;
+  left: 2%;
 }
 .header-ttl img {
   width: 80px;
   padding-top: 15%;
 }
-.header-ttl:hover{
+.header-ttl:hover {
   opacity: 0.5;
-  transition: 1.0s;
+  transition: 1s;
 }
 .header-nav-list {
   font-size: 16px;
@@ -36,13 +38,18 @@ a {
   display: flex;
   color: black;
   list-style: none;
+  position: absolute;
+  right: 2%;
 }
 .header-nav-list :hover {
   opacity: 0.5;
-  transition: 1.0s;
+  transition: 1s;
 }
 .header-nav-item:not(:last-child) {
   margin-right: 30px;
+}
+.sp-nav {
+  visibility: hidden;
 }
 
 /*トップ画面-*/
@@ -183,39 +190,42 @@ a {
   .header-nav {
     display: none;
   }
-  a{
+  a {
     text-decoration: none;
   }
-  .sp-nav{
+  .sp-nav {
     position: absolute;
     height: 100vh;
     width: 100%;
     left: -100%;
-    background:rgb(252, 251, 251);
-    transition: .7s;
+    background: rgb(252, 251, 251);
+    transition: 0.7s;
     text-align: center;
+    visibility: visible;
+    padding-top: 50%;
   }
-  .sp-nav ul{
-    padding-top: 55%;
+  .sp-nav ul {
+    padding-top: 60%;
   }
-  .sp-nav ul li{
+  .sp-nav ul li {
     list-style-type: none;
     margin-top: 50px;
     color: blue;
   }
   .sp-nav ul li :hover {
-  opacity: 0.5;
-  transition: 1.0s;
-  } 
+    opacity: 0.5;
+    transition: 1s;
+  }
   .menu-box {
-    position: relative;  
+    position: relative;
   }
   .menu {
     display: inline-block;
     width: 36px;
     height: 32px;
     cursor: pointer;
-    position: relative
+    position: absolute;
+    right: 2%;
   }
   .menu__line--top,
   .menu__line--middle,
@@ -248,7 +258,7 @@ a {
     top: 14px;
     transform: rotate(-45deg);
   }
-  .in{
+  .in {
     transform: translateX(100%);
   }
 }

@@ -28,9 +28,9 @@ a {
   width: 80px;
   padding-top: 15%;
 }
-.header-ttl:hover{
+.header-ttl:hover {
   opacity: 0.5;
-  transition: 1.0s;
+  transition: 1s;
 }
 .header-nav-list {
   font-size: 16px;
@@ -43,14 +43,14 @@ a {
 }
 .header-nav-list :hover {
   opacity: 0.5;
-  transition: 1.0s;
+  transition: 1s;
 }
 .header-nav-item:not(:last-child) {
   margin-right: 30px;
 }
-/*.sp-nav {
-  display: none;
-}*/
+.sp-nav {
+  visibility: hidden;
+}
 
 /*トップ画面-*/
 .main-box {
@@ -118,11 +118,17 @@ a {
 .text-box {
   padding: 2% 0 2% 0;
 }
-.hr-message1,.coaching-message1,.consalting-message1,.dx-message1 {
+.hr-message1,
+.coaching-message1,
+.consalting-message1,
+.dx-message1 {
   font-size: 18px;
   font-weight: bold;
 }
-.hr-message2,.coaching-message2,.consalting-message2,.dx-message2 {
+.hr-message2,
+.coaching-message2,
+.consalting-message2,
+.dx-message2 {
   font-size: 15px;
 }
 
@@ -145,7 +151,7 @@ a {
 }
 .news-title-area-btn :hover {
   opacity: 0.5;
-  transition: 1.0s;
+  transition: 1s;
 }
 .news__btn {
   position: relative;
@@ -160,7 +166,7 @@ a {
 }
 .news-box-area :hover {
   opacity: 0.5;
-  transition: 1.0s;
+  transition: 1s;
 }
 .news-box1 {
   display: flex;
@@ -184,7 +190,7 @@ a {
 .news-box2-date {
   padding: 0 1%;
 }
-.news-box3-date{
+.news-box3-date {
   padding: 0 1%;
 }
 .news-box2 {
@@ -221,7 +227,7 @@ a {
 }
 .card2 :hover {
   opacity: 0.5;
-  transition: 1.0s;
+  transition: 1s;
 }
 .card2 img {
   width: 100%;
@@ -252,7 +258,7 @@ a {
 }
 .comapany-recruit-area :hover {
   opacity: 0.5;
-  transition: 1.0s;
+  transition: 1s;
 }
 .company-title {
   position: absolute;
@@ -303,7 +309,7 @@ a {
 }
 .form__btn-area :hover {
   opacity: 0.5;
-  transition: 1.0s;
+  transition: 1s;
 }
 .practice__btn {
   position: relative;
@@ -345,16 +351,16 @@ a {
   position: relative;
   padding-top: 2%;
 }
-.footer-nav li+li:before {
-    position: absolute;
-    display: block;
-    content: "";
-    padding-top: 2%;
-    height: 2px;
-    border-right: 1px solid white;
+.footer-nav li + li:before {
+  position: absolute;
+  display: block;
+  content: "";
+  padding-top: 2%;
+  height: 2px;
+  border-right: 1px solid white;
 }
-.footer-nav a{
-    padding: 10px;
+.footer-nav a {
+  padding: 10px;
 }
 a {
   text-decoration: none;
@@ -365,11 +371,11 @@ a {
   display: flex;
   color: white;
   list-style: none;
-  margin: 0 0 0 auto
+  margin: 0 0 0 auto;
 }
 .footer-nav-list :hover {
   opacity: 0.5;
-  transition: 1.0s;
+  transition: 1s;
 }
 .divider {
   color: white;
@@ -381,39 +387,42 @@ a {
   .header-nav {
     display: none;
   }
-  a{
+  a {
     text-decoration: none;
   }
-  .header-nav{
+  .sp-nav {
     position: absolute;
     height: 100vh;
     width: 100%;
     left: -100%;
-    background:rgb(252, 251, 251);
-    transition: .7s;
+    background: rgb(252, 251, 251);
+    transition: 0.7s;
     text-align: center;
+    visibility: visible;
+    padding-top: 50%;
   }
-  .header-nav ul{
-    padding-top: 55%;
+  .sp-nav ul {
+    padding-top: 60%;
   }
-  .header-nav ul li{
+  .sp-nav ul li {
     list-style-type: none;
     margin-top: 50px;
     color: blue;
   }
-  .header-nav ul li :hover {
-  opacity: 0.5;
-  transition: 1.0s;
-  } 
+  .sp-nav ul li :hover {
+    opacity: 0.5;
+    transition: 1s;
+  }
   .menu-box {
-    position: relative;  
+    position: relative;
   }
   .menu {
     display: inline-block;
     width: 36px;
     height: 32px;
     cursor: pointer;
-    position: relative
+    position: absolute;
+    right: 2%;
   }
   .menu__line--top,
   .menu__line--middle,
@@ -446,7 +455,7 @@ a {
     top: 14px;
     transform: rotate(-45deg);
   }
-  .in{
+  .in {
     transform: translateX(100%);
   }
 }
