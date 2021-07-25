@@ -48,9 +48,9 @@ a {
 .header-nav-item:not(:last-child) {
   margin-right: 30px;
 }
-.sp-nav {
+/*.sp-nav {
   display: none;
-}
+}*/
 
 /*トップ画面-*/
 .main-box {
