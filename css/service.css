@@ -96,6 +96,9 @@ a {
 .contents1-box {
   border-top: solid 1px black;
 }
+.contents-sp-box {
+  visibility: hidden;
+}
 
 /*問い合わせフォーム*/
 .form-box {
@@ -194,6 +197,8 @@ a {
 }
 
 /*ここにスマホ用のCSSを書いていきます*/
+
+/*ハンバーガーメニュー*/
 @media screen and (max-width: 768px) {
   .header-nav {
     display: none;
@@ -266,4 +271,30 @@ a {
   .in {
     transform: translateX(100%);
   }
+
+/*サービスコンテンツ*/
+.contents-box {
+  display: none;
+}
+.contents-sp-box {
+  visibility: visible;
+  padding: 10% 20% 10% 20%;
+}
+.contents1-sp-box,.contents2-sp-box,.contents3-sp-box,.contents4-sp-box {
+  padding: 5% 0 5% 0;
+  border-bottom: solid 1px black;
+}
+.contents1-box img,.contents2-box img,.contents3-box img,.contents4-box img {
+  width: 30%;
+}
+.contents1-sp-message,.contents2-sp-message,.contents3-sp-message,.contents4-sp-message {
+  padding: 2% 0 1% 0%;
+}
+.contents1-sp-message span,.contents2-sp-message span,.contents3-sp-message span,.contents4-sp-message span {
+  font-size: 24px;
+  font-weight: bold;
+}
+.contents1-sp-box {
+  border-top: solid 1px black;
+}
 }
