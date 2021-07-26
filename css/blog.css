@@ -87,7 +87,7 @@ a {
 }
 .card :hover {
   opacity: 0.5;
-  transition: 1.0s;
+  transition: 1s;
 }
 .card img {
   width: 100%;
@@ -126,7 +126,7 @@ a {
 }
 .form__btn-area :hover {
   opacity: 0.5;
-  transition: 1.0s;
+  transition: 1s;
 }
 .practice__btn {
   position: relative;
@@ -169,16 +169,16 @@ a {
   position: relative;
   padding-top: 2%;
 }
-.footer-nav li+li:before {
-    position: absolute;
-    display: block;
-    content: "";
-    padding-top: 2%;
-    height: 2px;
-    border-right: 1px solid white;
+.footer-nav li + li:before {
+  position: absolute;
+  display: block;
+  content: "";
+  padding-top: 2%;
+  height: 2px;
+  border-right: 1px solid white;
 }
-.footer-nav a{
-    padding: 10px;
+.footer-nav a {
+  padding: 10px;
 }
 a {
   text-decoration: none;
@@ -189,15 +189,18 @@ a {
   display: flex;
   color: white;
   list-style: none;
-  margin: 0 0 0 auto
+  margin: 0 0 0 auto;
 }
 .footer-nav-list :hover {
   opacity: 0.5;
-  transition: 1.0s;
+  transition: 1s;
 }
 .divider {
   color: white;
   padding: 1%;
+}
+.sp-footer {
+  display: none;
 }
 
 /*ここにスマホ用のCSSを書いていきます*/
@@ -272,5 +275,49 @@ a {
   }
   .in {
     transform: translateX(100%);
+  }
+
+  /*レスポンシブデザイン用フッター*/
+  .footer {
+    display: none;
+  }
+  .sp-footer {
+    height: 240px;
+    padding: 0 18%;
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+  }
+  .sp-copyright {
+    font-size: 12px;
+    color: white;
+    padding-top: 30%;
+  }
+  .footer-sp-nav {
+    position: relative;
+    padding-top: 2%;
+  }
+  .footer-sp-nav a {
+    padding: 10px;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  .footer-sp-nav-list {
+    font-size: 12px;
+    color: white;
+    list-style: none;
+    margin: 0 0 0 auto;
+    text-align: center;
+    padding: 20% 0;
+  }
+  .footer-sp-nav-item {
+    padding: 8% 0;
+  }
+  .footer-sp-nav-list :hover {
+    opacity: 0.5;
+    transition: 1s;
   }
 }

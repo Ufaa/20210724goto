@@ -73,23 +73,34 @@ a {
   color: white;
 }
 
-
 /*メインページ*/
 .contents-box {
   padding: 0 20% 3% 20%;
 }
-.contents1-box,.contents2-box,.contents3-box,.contents4-box {
+.contents1-box,
+.contents2-box,
+.contents3-box,
+.contents4-box {
   display: flex;
   padding: 3% 0 5% 0;
-  border-bottom: solid 1px black; 
+  border-bottom: solid 1px black;
 }
-.contents1-box img,.contents2-box img,.contents3-box img,.contents4-box img {
+.contents1-box img,
+.contents2-box img,
+.contents3-box img,
+.contents4-box img {
   width: 30%;
 }
-.contents1-message,.contents2-message,.contents3-message,.contents4-message {
+.contents1-message,
+.contents2-message,
+.contents3-message,
+.contents4-message {
   padding: 0 0 1% 3%;
 }
-.contents1-message span,.contents2-message span,.contents3-message span,.contents4-message span {
+.contents1-message span,
+.contents2-message span,
+.contents3-message span,
+.contents4-message span {
   font-size: 24px;
   font-weight: bold;
 }
@@ -97,7 +108,7 @@ a {
   border-top: solid 1px black;
 }
 .contents-sp-box {
-  visibility: hidden;
+  display: none;
 }
 
 /*問い合わせフォーム*/
@@ -122,7 +133,7 @@ a {
 }
 .form__btn-area :hover {
   opacity: 0.5;
-  transition: 1.0s;
+  transition: 1s;
 }
 .practice__btn {
   position: relative;
@@ -165,16 +176,16 @@ a {
   position: relative;
   padding-top: 2%;
 }
-.footer-nav li+li:before {
-    position: absolute;
-    display: block;
-    content: "";
-    padding-top: 2%;
-    height: 2px;
-    border-right: 1px solid white;
+.footer-nav li + li:before {
+  position: absolute;
+  display: block;
+  content: "";
+  padding-top: 2%;
+  height: 2px;
+  border-right: 1px solid white;
 }
-.footer-nav a{
-    padding: 10px;
+.footer-nav a {
+  padding: 10px;
 }
 a {
   text-decoration: none;
@@ -185,11 +196,11 @@ a {
   display: flex;
   color: white;
   list-style: none;
-  margin: 0 0 0 auto
+  margin: 0 0 0 auto;
 }
 .footer-nav-list :hover {
   opacity: 0.5;
-  transition: 1.0s;
+  transition: 1s;
 }
 .divider {
   color: white;
@@ -272,29 +283,41 @@ a {
     transform: translateX(100%);
   }
 
-/*サービスコンテンツ*/
-.contents-box {
-  display: none;
-}
-.contents-sp-box {
-  visibility: visible;
-  padding: 10% 20% 10% 20%;
-}
-.contents1-sp-box,.contents2-sp-box,.contents3-sp-box,.contents4-sp-box {
-  padding: 5% 0 5% 0;
-  border-bottom: solid 1px black;
-}
-.contents1-box img,.contents2-box img,.contents3-box img,.contents4-box img {
-  width: 30%;
-}
-.contents1-sp-message,.contents2-sp-message,.contents3-sp-message,.contents4-sp-message {
-  padding: 2% 0 1% 0%;
-}
-.contents1-sp-message span,.contents2-sp-message span,.contents3-sp-message span,.contents4-sp-message span {
-  font-size: 24px;
-  font-weight: bold;
-}
-.contents1-sp-box {
-  border-top: solid 1px black;
-}
+  /*サービスコンテンツ*/
+  .contents-box {
+    display: none;
+  }
+  .contents-sp-box {
+    display: block;
+    padding: 10% 20% 10% 20%;
+  }
+  .contents1-sp-box,
+  .contents2-sp-box,
+  .contents3-sp-box,
+  .contents4-sp-box {
+    padding: 5% 0 5% 0;
+    border-bottom: solid 1px black;
+  }
+  .contents1-box img,
+  .contents2-box img,
+  .contents3-box img,
+  .contents4-box img {
+    width: 30%;
+  }
+  .contents1-sp-message,
+  .contents2-sp-message,
+  .contents3-sp-message,
+  .contents4-sp-message {
+    padding: 2% 0 1% 0%;
+  }
+  .contents1-sp-message span,
+  .contents2-sp-message span,
+  .contents3-sp-message span,
+  .contents4-sp-message span {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .contents1-sp-box {
+    border-top: solid 1px black;
+  }
 }
