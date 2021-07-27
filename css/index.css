@@ -94,7 +94,7 @@ a {
 
 /*サービス*/
 .wrapper-box {
-  padding: 5% 0 2% 0;
+  padding: 5% 10% 2% 10%;
 }
 .wrapper-box h1 {
   text-align: center;
@@ -103,13 +103,23 @@ a {
 .wrapper-contents {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  margin: 0 auto;
-  padding: 1% 20% 0 20%;
+  /*justify-content: space-between;*/
+  /*margin: 0 auto;*/
+  padding-top: 1%;
+  /*padding: 1% 30% 0 30%;*/
+}
+.contents-box1 {
+  display: flex;
+  margin: 0% auto;
+  padding: 0% 1%;
+}
+.contents-box2 {
+  display: flex;
+  margin: 0% auto;
 }
 .card {
-  width: 450px;
-  padding: 1%;
+  width: 600px;
+  padding: 1% 1%;
 }
 .card img {
   width: 100%;
@@ -130,6 +140,9 @@ a {
 .consalting-message2,
 .dx-message2 {
   font-size: 15px;
+}
+.sp-wrapper-box {
+  display: none;
 }
 
 /*ニュース-*/
@@ -216,10 +229,19 @@ a {
 }
 .wrapper2-contents {
   display: flex;
-  flex-wrap: wrap;
+  /*flex-wrap: wrap;*/
   justify-content: space-between;
-  margin: 0 auto;
-  padding: 1% 20% 2% 20%;
+  /*margin: 0 auto;
+  padding: 1% 20% 2% 20%;*/
+}
+.card2-box1,.card2-box2,.card2-box3 {
+  padding: 0 1%;
+}
+.card2-box1 {
+  padding-left: 20%;
+}
+.card2-box3 {
+  padding-right: 20%;
 }
 .card2 {
   width: 330px;
@@ -243,6 +265,9 @@ a {
   margin-top: 5px;
   padding-bottom: 2%;
   color: rgb(109, 106, 106);
+}
+.sp-wrapper2-box {
+  display: none;
 }
 
 /*会社概要・採用情報*/
@@ -502,4 +527,79 @@ a {
     opacity: 0.5;
     transition: 1s;
   }
+
+/*レスポンシブデザイン用　サービス*/
+  .wrapper-box {
+    display: none;
+  }
+  .sp-wrapper-box {
+    display: block;
+    padding: 10%;
+  }
+  .sp-wrapper-box h1 {
+  text-align: center;
+  font-size: 25px;
+  }
+  .sp-wrapper-contents {
+    padding: 5% 0;
+  }
+  .card {
+    width: 100%;
+    padding: 1% 1%;
+  }
+  .card img {
+    width: 100%;
+    height: auto;
+  }
+  .text-box {
+    padding: 2% 0 2% 0;
+  }
+  .hr-message1,
+  .coaching-message1,
+  .consalting-message1,
+  .dx-message1 {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .hr-message2,
+  .coaching-message2,
+  .consalting-message2,
+  .dx-message2 {
+    font-size: 15px;
+  }
+
+/*レスポンシブデザイン用　社員ブログ*/
+  .wrapper2-box {
+    display: none;
+  }
+  .sp-wrapper2-box {
+    display: block;
+    padding: 10%;
+  }
+  .sp-wrapper2-contents {
+  padding: 5% 0%;
+  }
+  .card2 {
+    width: 100%;
+    padding: 1%;
+  }
+  .card2 :hover {
+    opacity: 0.5;
+    transition: 1s;
+  }
+  .card2 img {
+    width: 100%;
+    height: auto;
+  }
+  .text2-box {
+    padding: 2% 0 2% 0;
+  }
+  .date2 {
+    display: inline-block;
+    font-size: 12px;
+    margin-top: 5px;
+    padding-bottom: 2%;
+    color: rgb(109, 106, 106);
+  }
+
 }

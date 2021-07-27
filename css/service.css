@@ -206,6 +206,10 @@ a {
   color: white;
   padding: 1%;
 }
+.sp-footer {
+  display: none;
+}
+
 
 /*ここにスマホ用のCSSを書いていきます*/
 
@@ -319,5 +323,49 @@ a {
   }
   .contents1-sp-box {
     border-top: solid 1px black;
+  }
+
+    /*レスポンシブデザイン用フッター*/
+  .footer {
+    display: none;
+  }
+  .sp-footer {
+    height: 240px;
+    padding: 0 18%;
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+  }
+  .sp-copyright {
+    font-size: 12px;
+    color: white;
+    padding-top: 30%;
+  }
+  .footer-sp-nav {
+    position: relative;
+    padding-top: 2%;
+  }
+  .footer-sp-nav a {
+    padding: 10px;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  .footer-sp-nav-list {
+    font-size: 12px;
+    color: white;
+    list-style: none;
+    margin: 0 0 0 auto;
+    text-align: center;
+    padding: 20% 0;
+  }
+  .footer-sp-nav-item {
+    padding: 8% 0;
+  }
+  .footer-sp-nav-list :hover {
+    opacity: 0.5;
+    transition: 1s;
   }
 }

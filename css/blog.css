@@ -77,9 +77,18 @@ a {
 .wrapper-contents {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  /*justify-content: space-between;
   margin: 0 auto;
-  padding: 4% 15%;
+  padding: 4% 15%;*/
+  padding: 4% 0;
+}
+.card-box1 {
+  display: flex;
+  margin: 0 auto;
+}
+.card-box2 {
+  display: flex;
+  margin: 0 auto;
 }
 .card {
   width: 350px;
@@ -102,6 +111,9 @@ a {
   margin-top: 5px;
   padding-bottom: 2%;
   color: rgb(109, 106, 106);
+}
+.sp-wrapper-box {
+  display: none;
 }
 
 /*問い合わせフォーム*/
@@ -320,4 +332,38 @@ a {
     opacity: 0.5;
     transition: 1s;
   }
+
+  /*レスポンシブデザイン用　メインページ-*/
+  .wrapper-box {
+    display: none;
+  }
+  .sp-wrapper-box {
+    display: block;
+    padding: 5%;
+  }
+  .sp-wrapper-contents {
+    padding: 5%;
+  }
+  .card {
+    width: 100%;
+    padding: 1%;
+  }
+  .card :hover {
+    opacity: 0.5;
+    transition: 1s;
+  }
+  .card img {
+    width: 100%;
+    height: auto;
+  }
+  .text-box {
+    padding: 2% 0 2% 0;
+  }
+  .date {
+    display: inline-block;
+    font-size: 12px;
+    margin-top: 5px;
+    padding-bottom: 2%;
+    color: rgb(109, 106, 106);
+}
 }
