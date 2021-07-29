@@ -94,11 +94,12 @@ a {
 
 /*サービス*/
 .wrapper-box {
-  padding: 5% 10% 2% 10%;
+  /*padding: 5% 10% 2% 10%;*/
 }
 .wrapper-box h1 {
   text-align: center;
   font-size: 25px;
+  padding-top: 5%;
 }
 .wrapper-contents {
   display: flex;
